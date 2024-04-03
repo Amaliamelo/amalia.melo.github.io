@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  color: #067ded;
+  color: #d5134d;
   text-decoration: none;
 }
 
@@ -699,7 +699,7 @@ section {
 }
 
 .projetos .projetos-wrap .projetos-links a:hover {
-  color: #148af9;
+  color: #d5134d;
 }
 
 .projetos .projetos-wrap:hover::before {
@@ -851,7 +851,7 @@ section {
 }
 
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #d5134d;
 }
 
 .services .iconbox-blue:hover .icon i {
