@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <title>Portifolio | Amália Melo </title>
 
@@ -24,6 +25,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
   <!-- =======================================================
   * Template Name: MyResume
@@ -85,8 +88,13 @@
               <p class="fst-italic">
                 <p>Prazer, eu me chamo Amália. E sim, é um nome diferente.
                 </p>
-                <p>Atualmente, sou estudante de Sistemas da Informação, no Instituto de Ciências Matemáticas e 
-                  da Computação da Universidade de São Paulo 
+                <p> Atualmente, estou cursando Bacharelado em Sistemas da Informação no ICMC - USP São Carlos e sou formada em Informática nível técnico pelo Instituto Federal de São Paulo. 
+                  Meu foco está na construção de uma carreira na área de desenvolvimento de sistemas, que venho explorando desde o ensino médio e continuo aprofundando na graduação.
+                  Durante os quatro anos do curso técnico, desenvolvi projetos web utilizando linguagens como PHP, HTML, CSS, Javascript e SQL para a construção de bancos de dados.
+                </p>
+                <p>
+                  Tenho um interesse significativo na área de engenharia de software voltada para o gerenciamento de produto e desenvolvimento de software a partir do metodo ágil.
+       
                 </p>
                 <p>Tenho 21 anos e muito aprender. Sou curisosa e gosto de saber sobre diversos assuntos, no detalhe,
                   questiono muito o mundo ao meu redor.
@@ -432,27 +440,27 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://formsubmit.co/ajax/amalia.melo@usp.br" method="post" class="php-email-form" data-form >
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Carregando</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Sua mensagem foi enviada. Obrigada!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" data-button>Enviar mensagem</button></div>
             </form>
 
           </div>
@@ -499,7 +507,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
