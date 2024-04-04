@@ -62,3 +62,16 @@ const formSubmit = new FormSubmit({
   success: "<h1 class='success'>Mensagem enviada!</h1>",
   error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
+
+$.ajax({
+  method: 'POST',
+  url: 'https://formsubmit.co/ajax/amalia.melo@usp.br.com',
+  dataType: 'json',
+  accepts: 'application/json',
+  data: {
+      name: "FormSubmit",
+      message: "I'm from Devro LABS"
+  },
+  success: (data) => console.log(data),
+  error: (err) => console.log(err)
+});
