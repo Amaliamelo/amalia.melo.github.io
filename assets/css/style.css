@@ -32,7 +32,10 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
+::selection {
+  background-color: #d5134d;
+  color: rgb(255, 255, 255);
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1010,7 +1013,9 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #fff;  
+  margin-left: 40%;
+
 }
 
 .contact .info i {
@@ -1025,6 +1030,7 @@ section {
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+ 
 }
 
 .contact .info h4 {
