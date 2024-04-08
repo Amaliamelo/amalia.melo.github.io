@@ -1,6 +1,6 @@
 /**
 * Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-exp/
+* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
 * Updated: Mar 17 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #d5134d;
+  color: #0563bb;
   text-decoration: none;
 }
 
 a:hover {
-  color: #d5134d;
+  color: #067ded;
   text-decoration: none;
 }
 
@@ -32,10 +32,7 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-::selection {
-  background-color: #d5134d;
-  color: rgb(255, 255, 255);
-}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -46,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #d5134d;
+  background: #0563bb;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -88,7 +85,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #d5134d;
+  border: 6px solid #0563bb;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -214,7 +211,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: #fff;
-  background: #d5134d;
+  background: #0563bb;
 }
 
 .nav-menu a:hover span,
@@ -268,27 +265,27 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
-  background-color: #d5134d;
+  background-color: #0563bb;
 }
 
 /*--------------------------------------------------------------
-# home Section
+# Hero Section
 --------------------------------------------------------------*/
-#home {
+#hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/home-gb.jpg") top right repeat;
-  background-size: contain;
+  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background-size: cover;
   position: relative;
 }
 
 @media (min-width: 992px) {
-  #home {
+  #hero {
     padding-left: 160px;
   }
 }
 
-#home:before {
+#hero:before {
   content: "";
   background: rgba(255, 255, 255, 0.8);
   position: absolute;
@@ -298,7 +295,7 @@ h6 {
   right: 0;
 }
 
-#home h1 {
+#hero h1 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
@@ -306,23 +303,23 @@ h6 {
   color: #45505b;
 }
 
-#home p {
+#hero p {
   color: #45505b;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
-#home p span {
-  color: #d5134d;
+#hero p span {
+  color: #0563bb;
   letter-spacing: 1px;
 }
 
-#home .social-links {
+#hero .social-links {
   margin-top: 30px;
 }
 
-#home .social-links a {
+#hero .social-links a {
   font-size: 24px;
   display: inline-block;
   color: #45505b;
@@ -331,21 +328,21 @@ h6 {
   transition: 0.3s;
 }
 
-#home .social-links a:hover {
-  color: #d5134d;
+#hero .social-links a:hover {
+  color: #0563bb;
 }
 
 @media (max-width: 992px) {
-  #home {
+  #hero {
     text-align: center;
   }
 
-  #home h1 {
+  #hero h1 {
     font-size: 32px;
     line-height: 36px;
   }
 
-  #home p {
+  #hero p {
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
@@ -392,7 +389,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #d5134d;
+  background: #0563bb;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -402,41 +399,39 @@ section {
 }
 
 /*--------------------------------------------------------------
-# sobre
+# About
 --------------------------------------------------------------*/
-.sobre .content h3 {
+.about .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #728394;
 }
 
-.sobre .content ul {
+.about .content ul {
   list-style: none;
   padding: 0;
 }
 
-.sobre .content ul li {
+.about .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
-.sobre .content ul strong {
+.about .content ul strong {
   margin-right: 10px;
 }
 
-.sobre .content ul i {
+.about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #d5134d;
+  color: #0563bb;
   line-height: 0;
 }
 
-.sobre .content p:last-child {
+.about .content p:last-child {
   margin-bottom: 0;
 }
-
-
 
 /*--------------------------------------------------------------
 # Facts
@@ -456,7 +451,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #d5134d;
+  background: #0563bb;
   color: #fff;
   border-radius: 50px;
   display: inline-flex;
@@ -483,36 +478,43 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.skills .count-box i {
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: #d5134d;
-  color: #fff;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-}
-.skills p {
+.skills .progress {
   height: 60px;
   display: block;
   background: none;
   border-radius: 0;
 }
 
-.skills .row{
-  margin-left: 20%;
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #45505b;
+}
 
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #f2f3f5;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #0563bb;
 }
 
 /*--------------------------------------------------------------
-# exp
+# Resume
 --------------------------------------------------------------*/
-.exp .exp-title {
+.resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -520,24 +522,24 @@ section {
   color: #45505b;
 }
 
-.exp .exp-item {
+.resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #d5134d;
+  border-left: 2px solid #0563bb;
   position: relative;
 }
 
-.exp .exp-item h4 {
+.resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #d5134d;
+  color: #0563bb;
   margin-bottom: 10px;
 }
 
-.exp .exp-item h5 {
+.resume .resume-item h5 {
   font-size: 16px;
   background: #f7f8f9;
   padding: 5px 15px;
@@ -546,19 +548,19 @@ section {
   margin-bottom: 10px;
 }
 
-.exp .exp-item ul {
+.resume .resume-item ul {
   padding-left: 20px;
 }
 
-.exp .exp-item ul li {
+.resume .resume-item ul li {
   padding-bottom: 10px;
 }
 
-.exp .exp-item:last-child {
+.resume .resume-item:last-child {
   padding-bottom: 0;
 }
 
-.exp .exp-item::before {
+.resume .resume-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -567,17 +569,17 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #d5134d;
+  border: 2px solid #0563bb;
 }
 
 /*--------------------------------------------------------------
-# projetos
+# Portfolio
 --------------------------------------------------------------*/
-.projetos .projetos-item {
+.portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
-.projetos #projetos-flters {
+.portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
@@ -587,7 +589,7 @@ section {
   padding: 2px 15px;
 }
 
-.projetos #projetos-flters li {
+.portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
@@ -600,16 +602,16 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.projetos #projetos-flters li:hover,
-.projetos #projetos-flters li.filter-active {
-  color: #d5134d;
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #0563bb;
 }
 
-.projetos #projetos-flters li:last-child {
+.portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
 
-.projetos .projetos-wrap {
+.portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -617,7 +619,7 @@ section {
   background: rgba(69, 80, 91, 0.8);
 }
 
-.projetos .projetos-wrap::before {
+.portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
@@ -630,7 +632,7 @@ section {
   opacity: 0;
 }
 
-.projetos .projetos-wrap .projetos-info {
+.portfolio .portfolio-wrap .portfolio-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -646,7 +648,7 @@ section {
   align-items: center;
 }
 
-.projetos .projetos-wrap .projetos-info::before {
+.portfolio .portfolio-wrap .portfolio-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -660,7 +662,7 @@ section {
   z-index: 9994;
 }
 
-.projetos .projetos-wrap .projetos-info::after {
+.portfolio .portfolio-wrap .portfolio-info::after {
   display: block;
   content: "";
   width: 48px;
@@ -674,13 +676,13 @@ section {
   z-index: 9994;
 }
 
-.projetos .projetos-wrap .projetos-info h4 {
+.portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
   color: #45505b;
   font-weight: 600;
 }
 
-.projetos .projetos-wrap .projetos-info p {
+.portfolio .portfolio-wrap .portfolio-info p {
   color: #45505b;
   font-size: 14px;
   text-transform: uppercase;
@@ -688,12 +690,12 @@ section {
   margin: 0;
 }
 
-.projetos .projetos-wrap .projetos-links {
+.portfolio .portfolio-wrap .portfolio-links {
   text-align: center;
   z-index: 4;
 }
 
-.projetos .projetos-wrap .projetos-links a {
+.portfolio .portfolio-wrap .portfolio-links a {
   color: #45505b;
   margin: 0 2px;
   font-size: 28px;
@@ -701,11 +703,11 @@ section {
   transition: 0.3s;
 }
 
-.projetos .projetos-wrap .projetos-links a:hover {
-  color: #d5134d;
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #148af9;
 }
 
-.projetos .projetos-wrap:hover::before {
+.portfolio .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
@@ -713,54 +715,54 @@ section {
   opacity: 1;
 }
 
-.projetos .projetos-wrap:hover .projetos-info {
+.portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
 
-.projetos .projetos-wrap:hover .projetos-info::before {
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
   top: 15px;
   left: 15px;
 }
 
-.projetos .projetos-wrap:hover .projetos-info::after {
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
 }
 
 /*--------------------------------------------------------------
-# projetos Details
+# Portfolio Details
 --------------------------------------------------------------*/
-.projetos-details {
+.portfolio-details {
   padding-top: 40px;
 }
 
-.projetos-details .projetos-details-slider img {
+.portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
 
-.projetos-details .projetos-details-slider .swiper-pagination {
+.portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.projetos-details .projetos-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d5134d;
+  border: 1px solid #0563bb;
 }
 
-.projetos-details .projetos-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d5134d;
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #0563bb;
 }
 
-.projetos-details .projetos-info {
+.portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
 }
 
-.projetos-details .projetos-info h3 {
+.portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -768,27 +770,27 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.projetos-details .projetos-info ul {
+.portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.projetos-details .projetos-info ul li+li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
-.projetos-details .projetos-description {
+.portfolio-details .portfolio-description {
   padding-top: 30px;
 }
 
-.projetos-details .projetos-description h2 {
+.portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.projetos-details .projetos-description p {
+.portfolio-details .portfolio-description p {
   padding: 0;
 }
 
@@ -854,7 +856,7 @@ section {
 }
 
 .services .iconbox-blue i {
-  color: #d5134d;
+  color: #47aeff;
 }
 
 .services .iconbox-blue:hover .icon i {
@@ -995,11 +997,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d5134d;
+  border: 1px solid #0563bb;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d5134d;
+  background-color: #0563bb;
 }
 
 @media (min-width: 992px) {
@@ -1013,14 +1015,12 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;  
-  margin-left: 40%;
-
+  background: #fff;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #d5134d;
+  color: #0563bb;
   float: left;
   width: 44px;
   height: 44px;
@@ -1030,7 +1030,6 @@ section {
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
- 
 }
 
 .contact .info h4 {
@@ -1056,7 +1055,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #d5134d;
+  background: #0563bb;
   color: #fff;
 }
 
@@ -1127,7 +1126,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #d5134d;
+  background: #0563bb;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1183,7 +1182,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #d5134d;
+  background: #0563bb;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1196,7 +1195,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #d5134d;
+  background: #0678e3;
   color: #fff;
   text-decoration: none;
 }
